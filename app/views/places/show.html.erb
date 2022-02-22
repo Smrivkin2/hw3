@@ -3,8 +3,10 @@
 <h3>Posts</h3>
 
 <ul>
-  <% for place in @place.posts %>
-    <li><%= "#{post}" %></li>
+  <% for post in @place.posts %>
+    <h4><%= "#{post.title}" %></h4>
+    <p><%= "#{post.posted_on}" %></p>
+    <p><%= "#{post.description}" %></p>
   <% end %>
 </ul>
 
